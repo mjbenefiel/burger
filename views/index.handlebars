@@ -26,6 +26,7 @@
 			          <input type="hidden" name="devoured" value="true">
 			          <button class="btn-primary" type="submit">Devour It!</button>
 			        </form>
+							
 
 			      </li>
 			    {{/unless}}
@@ -38,19 +39,17 @@
 
 			<h2>Burgers That Have Been Eaten!</h2>
 			
-			  {{#each burgers}}
-			    {{#if this.devoured}}
-			      <li>
-			      	{{this.id}}
-			        {{this.burger_name}}
-
-			      </li>
-			    {{/if}}
-			  {{/each}}
+				 {{#each burgers}}
+            {{#if devoured}}
+            <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
+           <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+            <hr>
+          {{/if}}
+           {{/each}}
 			
 	    </div>
 
-  	</div>
+	  	</div>
 	<!-- end .row -->
 
 	<div class="row">
