@@ -15,24 +15,25 @@
 			<br>
 			<h2>Burgers Available To Eat!</h2>
 
-			<ul>
+		<ul>
 			  {{#each burgers}}
 			    {{#unless this.devoured}}
+					
 			      <li>
-			      	{{this.id}}
-			        {{this.burger_name}}
+			       <span><strong> {{this.id}} - {{this.burger_name}} </strong>
 
-			        <form action="/{{this.id}}?_method=PUT" method="POST">
+			       <form action="/{{this.id}}?_method=PUT" method="POST">
 			          <input type="hidden" name="devoured" value="true">
 			          <button class="btn-primary" type="submit">Devour It!</button>
-			        </form>
-							
-
+			        </form></span>
+							 {{!-- <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span>Delete</button> --}}
+ {{!-- <button type="button" class="eatburger btn btn-warning" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button> --}}
 			      </li>
+					
 			    {{/unless}}
 			  {{/each}}
 			</ul>
-
+	
 	    </div>
 
 	    <div class="col-sm-6">
@@ -41,9 +42,12 @@
 			
 				 {{#each burgers}}
             {{#if devoured}}
+						<li>
             <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-           <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
-            <hr>
+						
+           <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span>Delete</button>
+            </li>
+						<hr>
           {{/if}}
            {{/each}}
 			
