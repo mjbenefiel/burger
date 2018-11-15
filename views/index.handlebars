@@ -20,20 +20,21 @@
 			    {{#unless this.devoured}}
 					
 			      <li>
-			       <span><strong> {{this.id}} - {{this.burger_name}} </strong>
+			       <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
 
-			       <form action="/{{this.id}}?_method=PUT" method="POST">
+			       <form class="form-inline" id="formID" action="/{{this.id}}?_method=PUT" method="POST">
 			          <input type="hidden" name="devoured" value="true">
-			          <button class="btn-primary" type="submit">Devour It!</button>
-			        </form></span>
+			          <button class="btn-primary" id="devourBtn" type="submit">Devour It!</button>
+			        </form>
+						
 							 {{!-- <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span>Delete</button> --}}
  {{!-- <button type="button" class="eatburger btn btn-warning" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button> --}}
 			      </li>
 					
 			    {{/unless}}
 			  {{/each}}
-			</ul>
-	
+			
+	</ul>
 	    </div>
 
 	    <div class="col-sm-6">
