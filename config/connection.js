@@ -3,10 +3,10 @@ var mysql = require("mysql");
 require("dotenv").config();
 
 var connection = mysql.createConnection({
-  host: process.env.DB_HOST,
+  host: "localhost",
   port: 3306,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
+  user: "mjbenefiel",
+  password: "dur@cell15",
   database: "burgers_db"
 });
 
