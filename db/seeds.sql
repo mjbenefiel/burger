@@ -1,16 +1,5 @@
-INSERT INTO burgers (
-burger_name,
-devoured
-) VALUES
-(
-"Krusty Burger",
-0
-),
-(
-"Good Burger",
-0
-),
-(
-"Burger World Burger",
-0
-);
+-- Select the burgers_db
+USE burgers_db;
+-- Insert new rows of data.
+INSERT INTO burgers (burger_name, devoured)
+VALUES ("hamburger", false), ("cheeseburger", false), ("tofu burger", false);

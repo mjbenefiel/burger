@@ -1,7 +1,7 @@
 {
-  "name": "burger",
+  "name": "eatdaburger",
   "version": "1.0.0",
-  "description": "Eat da Burger Homework",
+  "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,22 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjbenefiel/burger.git"
+    "url": "git+https://github.com/GrissomErick/Eat-Da-Burger.git"
   },
-  "author": "Michael Benefiel",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mjbenefiel/burger/issues"
+    "url": "https://github.com/GrissomErick/Eat-Da-Burger/issues"
   },
-  "homepage": "https://github.com/mjbenefiel/burger#readme",
+  "homepage": "https://github.com/GrissomErick/Eat-Da-Burger#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.4",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "method-override": "^3.0.0",
-    "mysql": "^2.16.0",
-    "path": "^0.12.7",
-    "pseudo": "^0.1.0"
+    "mysql": "^2.15.0"
   }
 }
