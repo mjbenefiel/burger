@@ -42,10 +42,18 @@ The user may enter any burger name to add it to the menu. This adds the new burg
         - establish database connection
     - orm.js
         - object for all of our SQL statement functions
+            - all selects all burgers from database
+            - create creates a new burger and inserts it into the database
+            - update updates a database change
+            - delete removes burger from database
 
 - controllers
     - burger_controllers.js
         - routing for our burger app
+            - get pulls all burgers from database and displays on screen
+            - post and create will post new burger on screen and in database      
+            - put and update will update database and move burger to devoured after button click
+            - delete will remove burger from screen and database
 
     - db
         - schema.sql
@@ -53,7 +61,7 @@ The user may enter any burger name to add it to the menu. This adds the new burg
       
 - models
     - burger.js
-        - importing orm to create functions that will interact with database
+        - importing orm.js to create functions that will interact with database
     
     - public
         - assets for images, css and simple js file
