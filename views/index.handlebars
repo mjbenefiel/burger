@@ -20,7 +20,7 @@
 				{{#unless this.devoured}}
 
 				<li>
-					<span class="burgerName"><strong>{{this.burger_name}} </strong></span>
+					<span class="burgerName"><strong>{{this.id}} - {{this.burger_name}} </strong></span>
 
 					<form class="form-inline" id="formID" action="/{{this.id}}?_method=PUT" method="POST">
 						<input type="hidden" name="devoured" value="true">
@@ -46,7 +46,7 @@
 			{{#each burgers}}
 			{{#if devoured}}
 			<li>
-				<span class="burgerName"><strong>{{this.burger_name}} </strong></span>
+				<span class="burgerName"><strong>{{this.id}} - {{this.burger_name}} </strong></span>
 
 				<button type="button" class="trashburger btn" id="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span
 					 class="trash"></span>Trash it</button>
