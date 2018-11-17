@@ -1,6 +1,6 @@
 <h1>Friend Finder</h1>
 
-Live version: IP
+Live version: https://peaceful-journey-44747.herokuapp.com/
 <hr></hr>
 
 Author: Michael Benefiel
