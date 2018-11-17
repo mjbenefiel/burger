@@ -3,14 +3,14 @@ burger_name,
 devoured
 ) VALUES
 (
-"Beef Double Cheese Burger",
+"Krusty Burger",
 0
 ),
 (
-"Patty Melt Burger",
+"Good Burger",
 0
 ),
 (
-"Mushroom & Swiss Double Cheese Burger",
+"Burger World Burger",
 0
 );
