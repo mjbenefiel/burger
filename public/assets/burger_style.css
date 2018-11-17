@@ -31,6 +31,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #ff0099;
+  margin-bottom: 25px;
   /* text-shadow: 2px 2px #ffffff; */
 }
 
@@ -49,6 +50,7 @@ h2 {
 
 .instructions {
   font-family: "Rock Salt", cursive;
+  font-size: 16px;
   color: white;
 }
 
@@ -57,12 +59,36 @@ h2 {
 }
 
 .btn-primary {
-  border-radius: 15px;
+    font-family: "Rock Salt", cursive;
+    border-radius: 15px;
+    background-color: #ff0101;
+    color: white;
 }
 
 .trashburger {
+ font-family: "Rock Salt", cursive;
   border-radius: 15px;
+  background-color: #ee1a1a;
+  color: white;
+ 
 }
+
+.devourburger {
+    font-family: "Rock Salt", cursive;
+     border-radius: 15px;
+     background-color: #26c40b;
+     color: white;
+    
+   }
+
+   .submitburger {
+    font-family: "Rock Salt", cursive;
+     border-radius: 15px;
+     background-color: #fb9f4a;
+     color: white;
+    
+   }
+
 
 .burgerName {
   font-family: "Rock Salt", cursive;
@@ -118,4 +144,93 @@ body {
 
 #formID {
   display: inline;
+}
+
+/* SEARCH OINPUT */
+
+
+a {
+	color: #69C;
+	text-decoration: none;
+}
+a:hover {
+	color: #F60;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background:  url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+    width: 100px;
+    color: white;
+    font-family: "Rock Salt", cursive;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	/* background-color: #fff; */
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/* Demo 2 */
+#demo-2 input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	/* background-color: #fff; */
+}
+#demo-2 input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	/* background-color: #fff; */
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
 }
