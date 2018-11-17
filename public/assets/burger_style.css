@@ -32,6 +32,7 @@ h1 {
   text-align: center;
   color: #ff0099;
   margin-bottom: 25px;
+  margin-top: 50px;
   /* text-shadow: 2px 2px #ffffff; */
 }
 
@@ -70,6 +71,7 @@ h2 {
   border-radius: 15px;
   background-color: #ee1a1a;
   color: white;
+  margin-left: 15px;
  
 }
 
@@ -78,6 +80,7 @@ h2 {
      border-radius: 15px;
      background-color: #26c40b;
      color: white;
+     margin-left: 15px;
     
    }
 
@@ -103,7 +106,7 @@ body {
   height: 100%;
   width: 100%;
   background: linear-gradient(rgba(26, 25, 25, 0.801), rgba(26, 25, 25, 0.801)),
-    url("https://res.cloudinary.com/streetartsf/image/upload/artworks/15509/Oakland-Kono-DSC04224.jpg")
+    url("/public/assets/img/burger.jpg")
       no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -181,7 +184,7 @@ input[type=search] {
 	background:  url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
-    width: 100px;
+    width: 150px;
     color: white;
     font-family: "Rock Salt", cursive;
 	
@@ -194,7 +197,7 @@ input[type=search] {
 	transition: all .5s;
 }
 input[type=search]:focus {
-	width: 130px;
+	width: 300px;
 	/* background-color: #fff; */
 	border-color: #66CC75;
 	
