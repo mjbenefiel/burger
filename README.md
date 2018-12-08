@@ -1,4 +1,4 @@
-<h1>Friend Finder</h1>
+<h1>Eat Da Burger</h1>
 
 Live version: https://peaceful-journey-44747.herokuapp.com/
 <hr></hr>
